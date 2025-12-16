@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
   };
 
   return {
-    // Base path is crucial for relative asset loading
+    // Base path is crucial for relative asset loading on Vercel
     base: './',
     plugins: [react()],
     define: {
