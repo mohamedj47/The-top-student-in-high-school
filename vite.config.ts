@@ -13,10 +13,11 @@ export default defineConfig(({ mode }) => {
   };
 
   return {
+    // Base path is crucial for relative asset loading
+    base: './',
     plugins: [react()],
     define: {
       // Vital: Polyfill process.env for the browser
-      // We explicitly define the keys we need to avoid the aggressive 'process.env': {} overwrite
       'process.env.API_KEY': JSON.stringify(getEnv('API_KEY')),
       'process.env.API_KEY_2': JSON.stringify(getEnv('API_KEY_2')),
       'process.env.API_KEY_3': JSON.stringify(getEnv('API_KEY_3')),
