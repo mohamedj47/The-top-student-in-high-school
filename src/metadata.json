@@ -1,0 +1,8 @@
+{
+  "name": "For ever Thanaweya Smart end Teacher ",
+  "description": "An intelligent, specialized tutoring system for Egyptian high school students utilizing Gemini 2.5 Flash for fast, targeted educational assistance.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
