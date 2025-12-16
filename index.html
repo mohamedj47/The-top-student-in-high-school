@@ -162,7 +162,6 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root">
@@ -175,8 +174,8 @@
             </style>
         </div>
     </div>
-    <!-- Adjusted to /main.tsx for root-level structure -->
-    <script type="module" src="/main.tsx"></script>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <!-- Adjusted to ./main.tsx (relative path) to fix Vercel Rollup error -->
+    <script type="module" src="./main.tsx"></script>
+  </body>
 </html>
+
